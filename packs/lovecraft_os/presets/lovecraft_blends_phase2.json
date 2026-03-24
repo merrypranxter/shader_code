@@ -1,0 +1,86 @@
+{
+  "pack": "lovecraft_os_phase2",
+  "extends": "lovecraft_os_phase1",
+  "version": "1.0.0",
+  "presets": [
+    {
+      "id": "abyssal_tide",
+      "label": "Abyssal Tide",
+      "shader": "shaders/phase2/abyssal_tide.frag",
+      "weights": {
+        "lovecraft_core": 0.50,
+        "fantastic_planet": 0.30,
+        "merry_style": 0.20
+      },
+      "uniforms": {
+        "u_intensity": 1.05,
+        "u_glow": 1.00,
+        "u_distort": 0.85
+      }
+    },
+    {
+      "id": "yellow_sign_halo",
+      "label": "Yellow Sign Halo",
+      "shader": "shaders/phase2/yellow_sign_halo.frag",
+      "weights": {
+        "lovecraft_core": 0.60,
+        "vintage_blacklight_poster": 0.25,
+        "glitchcore": 0.15
+      },
+      "uniforms": {
+        "u_intensity": 1.10,
+        "u_glow": 1.30,
+        "u_glitch": 0.45
+      }
+    },
+    {
+      "id": "madness_lattice",
+      "label": "Madness Lattice",
+      "shader": "shaders/phase2/madness_lattice.frag",
+      "weights": {
+        "lovecraft_core": 0.45,
+        "op_art": 0.40,
+        "psychedelic_pop": 0.15
+      },
+      "uniforms": {
+        "u_intensity": 1.00,
+        "u_moire": 1.20,
+        "u_glitch": 0.35
+      }
+    },
+    {
+      "id": "cyclopean_breath_mesh",
+      "label": "Cyclopean Breath Mesh",
+      "shader": "shaders/ritual_portal.frag",
+      "vertexShader": "shaders/phase2/cyclopean_breath.vert",
+      "weights": {
+        "lovecraft_core": 0.55,
+        "garbage_enlightenment": 0.20,
+        "fantastic_planet": 0.25
+      },
+      "uniforms": {
+        "u_intensity": 1.15,
+        "u_distort": 1.05,
+        "u_glow": 0.95
+      }
+    }
+  ],
+  "postFx": [
+    {
+      "id": "void_grain",
+      "shader": "shaders/phase2/void_grain_post.frag",
+      "uniforms": {
+        "u_grain": 0.65,
+        "u_vignette": 0.70
+      }
+    },
+    {
+      "id": "arcane_aberration",
+      "shader": "shaders/phase2/arcane_aberration_post.frag",
+      "uniforms": {
+        "u_aberration": 0.40,
+        "u_scan": 0.60
+      }
+    }
+  ]
+}
