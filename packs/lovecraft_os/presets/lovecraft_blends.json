@@ -1,0 +1,89 @@
+{
+  "pack": "lovecraft_os_phase1",
+  "version": "1.0.0",
+  "description": "Lovecraft core with style modulators from op-art, glitchcore, blacklight, fantastic planet, garbage enlightenment, psychedelic pop, and merry-style.",
+  "presets": [
+    {
+      "id": "eldritch_blacklight",
+      "label": "Eldritch Blacklight",
+      "shader": "shaders/eldritch_blacklight.frag",
+      "weights": {
+        "lovecraft_core": 0.55,
+        "vintage_blacklight_poster": 0.30,
+        "op_art": 0.15
+      },
+      "uniforms": {
+        "u_intensity": 1.00,
+        "u_glow": 1.15,
+        "u_distort": 0.75,
+        "u_moire": 1.10,
+        "u_glitch": 0.25
+      }
+    },
+    {
+      "id": "signal_of_rlyeh",
+      "label": "Signal of R'lyeh",
+      "shader": "shaders/signal_of_rlyeh.frag",
+      "weights": {
+        "lovecraft_core": 0.50,
+        "glitchcore": 0.30,
+        "op_art": 0.20
+      },
+      "uniforms": {
+        "u_intensity": 1.10,
+        "u_glow": 1.00,
+        "u_distort": 0.80,
+        "u_glitch": 0.90
+      }
+    },
+    {
+      "id": "cosmic_glam_cult",
+      "label": "Cosmic Glam Cult",
+      "shader": "shaders/ritual_portal.frag",
+      "weights": {
+        "lovecraft_core": 0.45,
+        "merry_style": 0.30,
+        "vintage_blacklight_poster": 0.15,
+        "psychedelic_pop": 0.10
+      },
+      "uniforms": {
+        "u_intensity": 1.00,
+        "u_glow": 1.35,
+        "u_distort": 0.60
+      }
+    },
+    {
+      "id": "mutant_grimoire",
+      "label": "Mutant Grimoire",
+      "shader": "shaders/ritual_portal.frag",
+      "weights": {
+        "lovecraft_core": 0.50,
+        "garbage_enlightenment": 0.30,
+        "fantastic_planet": 0.20
+      },
+      "uniforms": {
+        "u_intensity": 1.20,
+        "u_glow": 0.95,
+        "u_distort": 1.05
+      }
+    },
+    {
+      "id": "hypnosis_cathedral",
+      "label": "Hypnosis Cathedral",
+      "shader": "shaders/eldritch_blacklight.frag",
+      "vertexShader": "shaders/rlyeh_fold.vert",
+      "weights": {
+        "lovecraft_core": 0.40,
+        "op_art": 0.40,
+        "glitchcore": 0.20
+      },
+      "uniforms": {
+        "u_intensity": 1.05,
+        "u_glow": 1.00,
+        "u_distort": 1.10,
+        "u_moire": 1.30,
+        "u_glitch": 0.65
+      }
+    }
+  ]
+}
