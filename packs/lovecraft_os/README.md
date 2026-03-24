@@ -22,3 +22,14 @@ This pack is designed for ShaderForge-style generation and direct use as standal
 ## Notes
 - These are intentionally stylized and cinematic, not physically based.
 - Default values should target readability first, then theatrical effects.
+
+## Phase 2 expansion
+- New shader set in `shaders/phase2`:
+  - `abyssal_tide.frag`
+  - `yellow_sign_halo.frag`
+  - `madness_lattice.frag`
+  - `void_grain_post.frag` (post-process)
+  - `arcane_aberration_post.frag` (post-process)
+  - `cyclopean_breath.vert`
+- New preset bundle: `presets/lovecraft_blends_phase2.json`
+- Includes optional post-processing chain definitions (`postFx`) for cinematic finishing passes.
